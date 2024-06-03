@@ -59,7 +59,7 @@
     form1.garrafasCantidad.value++;
     val;
    }
-   document.getElementById("results").innerHTML = parseFloat(p) + val;
+   document.getElementById("results").innerHTML = parseFloat(parseFloat(p) + val).toFixed(2);
 };
 
 /*       document.querySelectorAll('input').forEach((input) => {
