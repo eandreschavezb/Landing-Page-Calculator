@@ -37,6 +37,8 @@ html, body {
 
 
 
+
+
 #newfont{
   font-family:'EntezareZohoor2';
 }
@@ -1232,12 +1234,58 @@ p {
           line-height: 0.9;
           text-align: center;
           color: white;
-          margin-bottom:1em;
         /*   margin-left: 2.5em; */
           -webkit-text-stroke: 2px #003971;
         }
 
 
+        .long-center-title-inline {
+          width: 100%;
+          background-color: #003971;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          font-family: Seaford; 
+          font-size: 4em;
+          gap: .1em;
+          line-height: 0.9;
+          text-align: center;
+          color: white;
+          padding-top: 0.2em;
+        /*   margin-left: 2.5em; */
+          -webkit-text-stroke: 2px #003971;
+        }
+
+        .textual-aid {
+          width: 100%;
+          background-color: #c0defd;
+          color: #003971;
+          font-size: 1.25em;
+          line-height: 1.2;
+          padding-block: 1.2em;
+        }
+
+        .quote-title {
+          width: 100%;
+          font-size: 0.95em;
+          font-weight: 600;
+          margin-bottom: -0.25em;;
+        }
+
+
+        .quote-true-title {
+          width: 100%;
+          font-size: 1.50em;
+          font-weight: 600;
+          margin-bottom: 0.25em;;
+        }
+
+
+
+        .moar {
+          font-size: 2em;
+        }
 
         
         
@@ -1249,9 +1297,10 @@ p {
 
 
         .button-botellon {  
-          width: 250px;
-          height: 250px;
-          
+          min-width: 10em;
+          min-height: 10em;
+          margin-top:-1em;
+          color: #fcfcfc00;
           background-color: azure;
           border: 0px;
         
@@ -1263,9 +1312,10 @@ p {
 
 
         .button-paca-300 {  
-          width: 250px;
-          height: 250px;
-          
+          min-width: 10em;
+          min-height: 10em;
+          margin-top:-1em;
+          color: #fcfcfc00;
           background-color: azure;
           border: 0px;
         
@@ -1277,9 +1327,10 @@ p {
 
 
         .button-paca-500 {  
-          width: 250px;
-          height: 250px;
-          
+          min-width: 10em;
+          min-height: 10em;
+          margin-top:-1em;
+          color: #fcfcfc00;
           background-color: azure;
           border: 0px;
         
@@ -1291,9 +1342,10 @@ p {
 
 
         .button-garrafa {  
-          width: 250px;
-          height: 250px;
-          
+          min-width: 10em;
+          min-height: 10em;
+          margin-top:-1em;
+          color: #fcfcfc00;
           background-color: azure;
           border: 0px;
         
@@ -1304,6 +1356,20 @@ p {
         }
 
 
+
+
+        .calculator-title {
+          --font-family: 'QuireSans', sans-serif;
+          font-size: 4em;
+          font-weight:800;
+          color: #003971;
+          margin-bottom: 1em;
+        }
+        
+
+
+
+
         #quote_calculator .quoter {
           font-size: 2.25em;
           width: 50%;
@@ -1311,8 +1377,8 @@ p {
           margin-left:auto;
           font-weight: 600;
           text-align: center;
-          color: #ffffff;
-          background-color: #003971;
+          color: #003971;
+          background-color: #fdc311;
           border: none;
         }
         
