@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link
+    rel="stylesheet"
+    href="/css/normalize.css"
+  />
+
+    <link href="/styleScroll.css" rel="stylesheet" type="text/css" />
+<!--     <link href="/fonts/quire/QuireSans.ttf">
+    <link href="/fonts/sea/SeafordBold.ttf"> -->
+
+
+
+    <style>
+/*         @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+ *//*         @import url('/fonts/quire/QuireSans.ttf');
+        @import url('/fonts/sea/SeafordBold.ttf'); */
+        </style>
+
+<!--     <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    /> -->
+
+    
+
+<!--     <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script> -->
+
+    <script>
+      window.onload = function() {
+          // Reset the form fields when the page loads
+          document.getElementById("form").reset();
+      };
+
+
+      function increment(val) {
+   var p = document.getElementById("results").innerHTML;
+   if (val === 0.28) {
+    form1.botellonesCantidad.value++;
+    val;
+   } else if (val === 0.61) {
+    form1.pacasQuinientosCantidad.value++;
+    val;
+   } else if (val === 0.43) {
+    form1.pacasTrescientosCantidad.value++;
+    val;
+   } else if (val === 0.26) {
+    form1.garrafasCantidad.value++;
+    val;
+   }
+   document.getElementById("results").innerHTML = parseFloat(p) + val;
+};
+
+/*       document.querySelectorAll('input').forEach((input) => {
+        input.addEventListener('blur', function() {
+            this.classList.toggle('green', this.value.length > 0);
+        });
+    }); */
+
+
+
+  </script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+
+
+
+<!--     <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script> -->
+    
+    <title>Splendor Comunidad Vecinos</title>
+</head>
+<body>
+<!--     <div class="rellax fondo" data-rellax-speed="-10"></div>
+    <div class="rellax volcano" data-rellax-speed="-7"></div>
+    <div class="whitespace"></div>
+    <div class="rellax clouds" 
+        data-rellax-vertical-scroll-axis="xy" 
+        data-rellax-horizontal-speed="-10" 
+        data-rellax-vertical-speed="-4" 
+        data-rellax-max-x="1000">
+    </div>
+    <div class="rellax text" 
+    data-rellax-horizontal-small-speed="-10" 
+    data-rellax-vertical-small-speed="-10" 
+        data-rellax-vertical-scroll-axis="xy" 
+        data-rellax-horizontal-speed="10" 
+        data-rellax-vertical-scroll-mobile-axis="x" 
+        data-rellax-horizontal-mobile-speed="10" 
+        data-rellax-vertical-speed="-4" 
+          data-rellax-vertical-mobile-speed="10" 
+          data-rellax-max-x="5"
+        data-rellax-max-mobile-x="5">
+    </div>
+    <div class="rellax foremounts" data-rellax-speed="-4">
+        <img src="img/gifestupido2.gif" class="giffy" alt="">
+    </div>
+    <div class="closeclouds"  data-rellax-horizontal-speed="10" data-rellax-vertical-scroll-axis="x">
+    </div>
+    <div class="rellax buttoncontainer" data-rellax-speed="0">
+
+        <button type="button" class="scroll_down" id="scroll_down">Iniciar Sesión</button>
+    </div>
+    <div class="rellax ferns1"
+        data-rellax-horizontal-speed="-10" 
+        data-rellax-horizontal-xs-speed="-5" 
+        data-rellax-vertical-scroll-axis="x"></div>  
+    <div class="rellax ferns2"
+        data-rellax-horizontal-speed="10" 
+        data-rellax-horizontal-xs-speed="-5" 
+        data-rellax-vertical-scroll-axis="x"></div>   -->
+
+
+<!--     <div class="content" style="scroll-snap-align: center;">
+        <div class="intruder">
+
+            <div class="logos">
+              <img src="img/SEPLENDOR-BLANCO.png" class="log-trio" style="opacity: 1;" alt="">
+            </div>
+
+            <form class="pt-5 px-2 px-lg-3">
+              <div class="form-group">
+                <label for="exampleInputEmail1">Usuario</label>
+                <input
+                  type="text"
+                  class="contrrol"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Contraseña</label>
+                <input
+                  type="password"
+                  class="contrrol"
+                  id="exampleInputPassword1"
+                />
+              </div>
+              <div class="text-center mx-auto mt-5" style="font-family: 'Roboto';">
+                <a href="temp-mainmenu.html" class="btn btn-sm rounded-pill px-5">
+                    INGRESAR
+                </a>
+              </div>
+            </form>
+      
+            <div class="textos-bottom text-center mt-5 mb-3">
+              <small
+                ><a
+                  href="https://api.whatsapp.com/send?phone=593997890957&text=Hola, necesito la asistencia de Recursos Humanos."
+                  target="_blank"
+                  class=""
+                  >AYUDA
+                  </a
+                >  
+                |  
+                <a 
+                  href="#" 
+                  class="">
+                  DERECHOS RESERVADOS
+                  </a>
+              </small>
+            </div>
+      
+      
+      
+      
+          </div>
+    </div>   -->
+
+
+
+<!-- SECCION-CARATULA -->
+
+    <div class="content-2" style="scroll-snap-align: center;">
+      <div class="intruder-2">
+    
+        </div>
+  </div>  
+
+
+
+  <div class="content-3" style="scroll-snap-align: center;">
+    <div class="col-12 col-md-6 col-lg-6 bg-image-1">
+
+    </div>
+    <div class="col-12 col-md-6 col-lg-6 titulo-texto">
+      <h1 class="fat-title">SOBRE NOSOTROS</h1>
+      <div class="blue-paragraph">
+
+      <p class="parrafo">Bienvenidos a una oportunidad exclusiva para enriquecer sus comunidades con Agua Splendor. Nuestra agua, proveniente del corazón de la selva tropical de La Maná, bajo el imponente Cotopaxi, no solo hidrata; revitaliza con cada sorbo, enriqueciéndose con minerales y propiedades únicas durante su filtración por rocas volcánicas.</p>
+      </div>
+    </div>
+  </div>  
+
+
+<!--   DONE - DONE - DONE - DONE - DONE - DONE - DONE -->
+
+
+  <div class="content-4" style="scroll-snap-align: center;">
+    <div class="col-12  col-sm-12 col-md-6 a-bit-down-boy">
+      <div class="blue-paragraph-2">
+        <h1 class="fat-title-neg">¿QUÉ ES?</h1>
+      <p class="parrafo-2">Bienveidos a una oportunidad exclusiva para enriquecer sus comunidades con Agua Splendor. Nuestra agua, proveniente del corazón de la selva tropical de La Maná, bajo el imponente Cotopaxi, no solo hidrata; revitaliza con cada sorbo, enriqueciéndose con minerales y propiedades únicas durante su filtración por rocas volcánicas.</p>
+      </div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-6 d-none down-boy">
+      <img src="/img/vecis/mid--01.png" alt="">
+    </div>
+</div>  
+
+
+
+<!--   DONE - DONE - DONE - DONE - DONE - DONE - DONE -->
+
+
+
+<!--   IN PROCESS - IN PROCESS - IN PROCESS - IN PROCESS -  -->
+
+
+<div class="content-5" style="scroll-snap-align: center;">
+  <div class="row w-100 conditioned-margin">
+    <h1 class="long-title">BENEFICIOS PARA SU COMUNIDAD</h1>
+    <div class="gray-square"></div>
+  </div>
+
+
+
+  <div class="row w-100 w-md-75">
+    <div class="col-12 col-md-4">
+      <p class="tiny-title">REEMBOLSO</p>
+      <p class="tiny-paragraph">La comunidad recibirá un 
+        reembolso del 8% mensual del 
+        total de compras que se realicen 
+        en los productos de Agua Splendor</p>
+        
+        <p class="tiny-title">COMPROMISO</p>
+        <p class="tiny-paragraph"> Un compromiso de Splendor para 
+          mejorar su entorno y premiar a sus 
+          clientes por la fidelidad</p>
+    </div>
+    <div class="col-12 col-md-4">
+      <p class="tiny-title">CALIDAD</p>
+      <p class="tiny-paragraph">Recibirá el agua de mejor calidad y 
+        percepción en el mercado 
+        directamente en la comodidad de 
+        su comunidad.</p>
+        <p class="tiny-title">SEGURIDAD</p>
+        <p class="tiny-paragraph"> Entregas con seguridad, personal y 
+          vehículos calificados. Cuentas 
+          claras de los reembolsos.</p>
+    </div>
+    <div class="col-12 col-md-4">
+      <p class="tiny-title">INGRESO ADICIONAL</p>
+      <p class="tiny-paragraph">  La comunidad tendrá todos los 
+        meses un ingreso extra a la cuenta 
+        de administración y mantenimiento 
+        del conjunto residencial por sus 
+        compras realizadas</p>
+    </div>
+  </div>
+</div>
+
+<!--   IN PROCESS - IN PROCESS - IN PROCESS - IN PROCESS -  -->
+
+
+<div class="content-3" style="scroll-snap-align: center;">
+  <div class="col-12 col-md-6 titulo-texto">
+    <div class="row">
+      <h1 class="long-title">BENEFICIOS INCREÍBLES</h1>
+      <div class="teal-square"></div>
+    </div>
+    <div class="blue-paragraph-3">
+    <p class="parrafo">Este programa transforma cada compra en una inversión 
+      para su comunidad.Los fondos acumulados pueden ser 
+      utilizados para mejorar infraestructuras, áreas comunes, 
+      renovaciones de canchas, pintura de cerramientos, mejoras 
+      en seguridad y más, contribuyendo significativamente al 
+      bienestar y la estética de su entorno</p>
+    </div>
+  </div>
+  <div class="col-12 col-md-6 bg-image-2">
+<!--     <img src="/img/vecis/familia2.png" class="imagen-inner" alt=""> -->      <!-- style="z-index: -10000;transform: scale(0.8); -->
+  </div>
+</div>  
+
+
+
+<div class="content-6" style="scroll-snap-align: center;">
+  <div class="col-12 col-md-2 img-fondo">
+
+  </div>
+  <div class="col-12 col-md-10 center-stuff">
+    <p class="long-left-title">¿QUIÉN FORMA PARTE?</p>
+    <p class="normal-title w-75">
+      TODOS FORMAN PARTE DE SPLENDOR VECINOS
+    </p>
+    <p class="normal-paragraph w-75"> Toda la comunidad perteneciente al conjunto habitacional forma 
+      parte del programa ‘Splendor Vecinos’, los actuales clientes solo 
+      empiezan a aportar a través de sus compras regulares al fondo 
+      comunal.
+       Los nuevos condóminos pueden empezar a aportar cuando 
+      quieran. Para ellos ofrecemos, GRATIS, un botellón nuevo 
+      Splendor o la posibilidad de cambiar los botellones de otras 
+      marcas por los nuestros.</p>
+  </div>
+</div>
+
+
+
+
+<!-- mover seccion -->
+<div class="content-8" style="scroll-snap-align: center;">
+<!--   <div class="col-6 a-bit-down-boy"> -->
+<!--     <div class="blue-paragraph-2"> -->
+<!--       <div class="row"> -->
+        <div class="contenedor-central">
+          <h1 class="long-center-title">INSCRIPCIÓN Y REEMBOLSO</h1>
+          <p class="parrafo-central">Bienvenidos a una oportunidad exclusiva para enriquecer sus comunidades con Agua Splendor. Nuestra agua, proveniente del corazón de la selva tropical de La Maná, bajo el imponente Cotopaxi, no solo hidrata; revitaliza con cada sorbo, enriqueciéndose con minerales y propiedades únicas durante su filtración por rocas volcánicas.</p>
+            <div class="rowan-atkinson">
+              
+              <div class="teal-cel">
+                <div class="label-teal">
+                  <h6>
+                    INSCRIPCIÓN
+                  </h6>
+                </div>
+                <br><br>
+                <p class="thin-bitches">Inscripción a través del equipo 
+                  de Marketing & Comercial de 
+                  Agua Splendor</p>
+              </div>
+
+              <div class="teal-cel">
+                <div class="label-teal">
+                  <h6>REGISTRO</h6>
+                </div>
+                <br><br>
+                <p class="thin-bitches"> Validación del registro, 
+                  auditoria de los clientes 
+                  activos y puesta en marcha</p>
+              </div>
+
+              <div class="teal-cel">
+                <div class="label-teal">
+                  <h6>REEMBOLSO</h6>
+                </div>
+                <br><br>
+                <p class="thin-bitches"> Informe detallado de los 
+                  consumos y aportes 
+                  acumulados de la comunidad</p>
+              </div>
+
+              
+            </div>
+        </div>
+
+
+  </div>
+
+<!-- SECCION APAGADA -->
+  <div class="content-9a d-none" style="scroll-snap-align: center;">
+    <div class="col-12 col-md-1 verticalize centers long-sideways-center-title">¿CÓMO FUNCIONA?</div>
+
+
+
+    <div class="col-12 col-md-4 columnize-upper">
+      <img src="/img/vecis/botellon-05.png" class="control-main-picture" alt="">
+      <p class="tiny-title-center">BOTELLON 20LTS</p>
+      <p class="tiny-paragraph-center"> <strong>Usted paga:</strong> $4.10 ($3.57)
+        Comunidad recibe <strong>$0.28</strong> por 
+       cada botellón adquirido</p>
+    </div>
+
+
+
+
+    <div class="col-12 col-md-6 columnize-upper">
+      <div class="rowize-upper">
+        <img src="/img/vecis/botellas--02.png" class="control-pictures" alt="">
+        <div class="columnize">
+          <p class="tiny-title">500ML</p>
+          <p class="tiny-paragraph"><strong>Usted paga:</strong> $6.20 ($5.39)
+            Comunidad recibe <strong>$0.43</strong> por 
+           cada paca adquirida</p>
+        </div>
+      </div>
+
+
+      <div class="rowize-upper">
+        <img src="/img/vecis/botellas--03.png" class="control-pictures" alt="">
+        <div class="columnize">
+          <p class="tiny-title">5LTS</p>
+          <p class="tiny-paragraph"> <strong>Usted paga:</strong> $3.80 ($3.30)
+            Comunidad recibe <strong>$0.26</strong> por 
+           cada paca adquirida</p>
+        </div>
+      </div>
+
+
+
+      <div class="rowize">
+        <img src="/img/vecis/botellas--04.png" class="control-pictures" alt="">
+        <div class="columnize">
+          <p class="tiny-title">350ML VIDRIO</p>
+          <p class="tiny-paragraph"><strong>Usted paga:</strong> $8.90 ($7.74)
+            Comunidad recibe $0.61 por 
+           cada jaba recargada</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+<!--   DO NOT GO UP ANY FURTHER  -----  DO NOT GO UP ANY FURTHER  -----  DO NOT GO UP ANY FURTHER  -->
+
+
+
+
+
+  <div class="content-9" style="scroll-snap-align: center;">
+
+
+      <div class="col-12 col-lg-1 little-turd">
+        <div class="only-cels">
+<!--           <p class="tiny-title-center-special">¿CÓMO FUNCIONA?</p>    -->
+          <p class="tiny-subtitle-center-special">EJEMPLO PRÁCTICO</p>
+        </div>
+      </div>
+
+
+      <div class="col-12 col-md-5 sizing-aid-20">
+        <img src="./img/vecis/bottles-3-01.png" class="control-main-picture" alt="">
+      </div>
+
+
+
+      <div class="col-12 col-md-6 sizing-aid-70">
+        <h6 class="normal-paragraph-example"><strong>Casas:</strong> 49<br>
+          <strong>Clientes Splendor Actuales:</strong> 4<br>
+          <strong>Nuevos Clientes (Splendor Vecinos):</strong> 20<br>
+          <strong>Total Clientes:</strong> 24 (48%)<br><br>
+          <strong>Producto adquirido en el mes:</strong><br>
+          <strong>Recargas Botellón:</strong> 48 - $256.32<br>
+          <strong>Pacas 500 ml sin gas:</strong> 21 - $113.19<br>
+          <strong>Pacas 5Lts:</strong> 24 – $79.20<br>
+          <strong>Total de compras (sin impuestos):</strong> $448.71<br><br>
+          <strong>Reembolso otorgado sl mes al condominio de parte de 
+            Agua Splendor:</strong> $35.89 <br><br>
+        <strong>A los 12 meses recibirán un aporte aproximado de:</strong> <br>
+        $430.76<br><br>
+          <strong>MIENTRAS MÁS VECINOS SE JUNTEN, MAYOR SERÁ EL 
+            BENEFICIO</strong><br><br>
+          <small>*Aporte máximo mensual otorgado: $400 por condominio</small></h6>
+      </div>
+  </div>
+
+
+
+
+
+<!-- </div>   -->
+
+
+<div class="content-7" style="scroll-snap-align: center;">
+  <div class="col-12 col-md-6 m-auto m-md-1 a-bit-down-boy">
+    <div class="blue-paragraph-2">
+      <h1 class="fat-title-neg">¿ESTÁN LISTOS?</h1>
+    <p class="parrafo">Transforme cada compra de Agua Splendor en un 
+      beneficio tangible para su comunidad.
+       ¿Quiere formar parte? ¿Tiene dudas o preguntas? 
+      Contáctenos hoy al 097 998 6202 o envíenos un 
+      correo a marketing@aguasplendor.com.ec y 
+      comience a aprovechar los beneficios de Agua 
+      Splendor y 'Splendor Vecinos'</p>
+    </div>
+  </div>
+  <div class="col-12 col-md-6 m-auto m-md-1 down-boy">
+    <img src="/img/vecis/mid--01.png" alt="">
+  </div>
+</div>  
+
+
+
+<!-- REPEATED SECTION ------------ REPEATED SECTION ------------REPEATED SECTION ------------REPEATED SECTION -->
+
+<div class="w-100 h-100 d-flex flex-column justify-content-center align-items-center" style="scroll-snap-align: center;">
+
+
+
+
+<!--   <div class="col-12 col-md-5 sizing-aid-20">
+    <img src="./img/vecis/bottles-3-01.png" class="control-main-picture" alt="">
+  </div> -->
+
+
+
+<form action="" name="form1" id="quote_calculator">
+
+
+
+  <div class="row">
+    <div class="col-3">
+      <div class="d-flex w-100 flex-column justify-content-center align-items-center">
+        <input title="botellon" class="button-botellon" id="botellon-button" onclick="increment(0.28);" type="button" value="0.28">
+        <label for="botellonesCantidad" class="w-50 text-center my-5">Cantidad aproximada de <strong>BOTELLONES</strong> comprados <strong>MENSUALMENTE</strong>:</label>
+        <input type="number" class="quoter pl-3" name="botellonesCantidad">
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="d-flex w-100 flex-column justify-content-center align-items-center">
+        <input title="botellon" class="button-paca-500" id="botellon-button" onclick="increment(0.61);" type="button" value="0.61">
+        <label for="pacasQuinientosCantidad" class="w-50 text-center my-5">Cantidad aproximada de <strong>PACAS (x12) DE 350ml.</strong> comprados <strong>MENSUALMENTE</strong>:</label>
+        <input type="number" class="quoter pl-3" name="pacasQuinientosCantidad">
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="d-flex w-100 flex-column justify-content-center align-items-center">
+        <input title="botellon" class="button-paca-300" id="botellon-button" onclick="increment(0.43);" type="button" value="0.43">
+        <label for="pacasTrescientosCantidad" class="w-50 text-center my-5">Cantidad aproximada de <strong>PACAS (x6) DE 550ml.</strong> comprados <strong>MENSUALMENTE</strong>:</label>
+        <input type="number" class="quoter pl-3" name="pacasTrescientosCantidad">
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="d-flex w-100 flex-column justify-content-center align-items-center">
+        <input title="botellon" class="button-garrafa" id="botellon-button" onclick="increment(0.26);" type="button" value="0.26">
+        <label for="garrafasCantidad" class="w-50 text-center my-5">Cantidad aproximada de <strong>GARRAFAS 5lts.</strong> comprados <strong>MENSUALMENTE</strong>:</label>
+        <input type="number" class="quoter pl-3" name="garrafasCantidad">
+      </div>
+    </div>
+  </div>
+
+
+  <div class="d-flex w-100 flex-column justify-content-center align-items-center mt-5">
+        <label for="totalAhorro" class="w-50 text-center my-5">TOTAL DEL APORTE A SU COMUNIDAD</label>
+        <label for="totalAhorro" class="w-50 text-center my-5">ES UN VOUCHER QUE SE ACREDITA LA FINAL DEL MES A LA CUENTA DEL CONJUNTO</label>
+<!--       <input id="calc" type="text" name="totalAhorro"> -->
+      <p id="results">
+0
+      </p>
+  </div>
+  
+
+<!--   <input type="button" value="=" onclick="form1.answer.value = eval(form1.answer.value) "> -->
+
+</form>
+</div>
+
+
+
+
+
+<div class="content" style="scroll-snap-align: center;">
+  <div class="intruder-a w-75">
+      <div class="logos">
+        <img src="img/SEPLENDOR-BLANCO.png" alt="">
+      </div>
+      
+      <form class="w-50 w-md-75" id="form" action="https://api.web3forms.com/submit" method="POST">   <!-- class="pt-5 px-2 px-lg-3" -->
+          <div class="row gray-color mb-2">
+<!--            <div class="col-6"> -->
+
+            <input type="hidden" name="access_key" value="67159495-b0d9-403d-bfd0-d256c29799c1">
+            <input type="hidden" name="from_name" value="Splendor-Vecinos">
+            <input type="hidden" name="subject" value="Nuevo Contacto Splendor-Vecinos">
+            <input type="checkbox" name="botcheck" id="" style="display: none;">
+
+            <div class="col-12">
+              <div class="form-group">
+                <label style="transform: translateY(1em)">Nombre de la comunidad:</label><br>
+                <label style="font-size:0.8em;" class="might-do-without color-inputs">(condominio / urbanización / edificio)</label>
+                <input
+                  type="text"
+                  class="contrrol-wide"
+                  name="info-comunidad"
+                  aria-describedby="info-general-comunidad"
+                  size="50"
+                />
+              </div>
+            </div>
+    
+            <div class="col-6">
+              <div class="form-group">
+                <label>Dirección:</label>
+                <input
+                  type="text"
+                  class="contrrol"
+                  name="info-direccion"
+                  aria-describedby="direccion-comunidad"
+                  size="50"
+                  required
+                />
+              </div>
+            </div>
+    
+            <div class="col-6">
+              <div class="form-group">
+                <label>Sector:</label>
+                <input
+                  type="text"
+                  class="contrrol"
+                  name="info-sector"
+                  aria-describedby="sector-comunidad"
+                  size="20"
+                  required
+                />
+              </div>
+            </div>
+    
+    
+            <div class="col-6">
+              <div class="form-group">
+                <label>Ciudad:</label>
+                <input
+                  type="text"
+                  class="contrrol"
+                  name="info-ciudad"
+                  aria-describedby="ciudad-comunidad"
+                  size="15"
+                  required
+                />
+              </div>
+            </div>
+    
+            <div class="col-6">
+              <div class="form-group">
+                <label>Referencia:</label>
+                <input
+                  type="text"
+                  class="contrrol"
+                  name="info-referencia"
+                  aria-describedby="referencia-comunidad"
+                  size="50"
+                />
+              </div>
+            </div>
+
+
+          </div>
+<!--           </div> -->
+
+
+
+
+
+
+          <div class="row gray-color">
+            <div class="col-12">
+              <div class="form-group">
+                <label style="transform: translateY(1em)">Nombre del contacto:</label><br>
+                <label class="" style="font-size:0.8em;" class="might-do-without color-inputs">(responsable de contratación)</label>
+                <input
+                  type="text"
+                  class="contrrol-wide"
+                  name="contacto-nombre"
+                  aria-describedby="contacto-nombre"
+                  size="50"
+                  required
+                />
+              </div>
+            </div>
+    
+            <div class="col-6">
+              <div class="form-group">
+                <label>Teléfono celular:</label>
+                <label style="font-size:0.8em; margin-top: -0.75em; line-height: 1.1;" class="might-do-without color-inputs">/ Solo números - máximo 10 caracteres</label>
+                <input
+                  type="tel"
+                  class="contrrol"
+                  name="contacto-celular"
+                  aria-describedby="contacto-telefono-celular"
+                  pattern="[0-9]{10}" required
+                />
+              </div>
+            </div>
+    
+            <div class="col-6">
+              <div class="form-group">
+                <label>Teléfono fijo:</label>
+                <label style="font-size:0.8em; margin-top: -0.75em; line-height: 1.1;" class="might-do-without color-inputs">/ Solo números - máximo 9 caracteres</label>
+                <input
+                  type="tel"
+                  class="contrrol"
+                  name="contacto-fijo"
+                  aria-describedby="contacto-telefono-fijo"
+                />
+              </div>
+            </div>
+    
+    
+            <div class="col-6">
+              <div class="form-group">
+                <label>Correo:</label>
+                <input
+                  type="email"
+                  class="contrrol"
+                  name="contacto-correo"
+                  aria-describedby="contacto-correo"
+                  required
+                />
+              </div>
+            </div>
+    
+            <div class="col-6 d-none">
+              <div class="form-group">
+                <label>Blank:</label>
+                <input
+                  type="text"
+                  class="contrrol"
+                  id="blank-field"
+                  aria-describedby="blank"
+                />
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="row">
+            <div class="col-12">
+              <div class="text-center mx-auto mt-5" style="  --font-family: 'QuireSans', sans-serif;">
+                <button class="btn btn-sm px-5" style="background-color: #ffc000;" type="submit">INGRESAR</button>
+              </div>
+              <div id="result"></div>
+            </div>
+          </div>
+
+
+
+<!--         <div class="form-group">
+          <label for="exampleInputPassword1">Contraseña</label>
+          <input
+            type="password"
+            class="contrrol"
+            id="exampleInputPassword1"
+          />
+        </div> -->
+<!--           <div class="row">
+            <div class="text-center mx-auto mt-5" style="  --font-family: 'QuireSans', sans-serif;">
+              <a href="temp-mainmenu.html" class="btn btn-sm rounded-pill px-5">
+                  INGRESAR
+              </a>
+            </div>
+          </div> -->
+      </form>
+  </div>
+
+</div>
+
+
+
+
+
+
+    
+
+
+
+
+
+<!--     <script
+    src="./script.js"></script>
+    <script src="/node_modules/rellax/rellax.min.js"></script>
+    <script type="text/javascript">
+        var rellax = new Rellax('.rellax', {
+            horizontal:true,
+            breakpoints:[383,480,1200]
+        })
+    </script> -->
+
+
+
+
+
+</body>
+</html>

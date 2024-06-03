@@ -1,0 +1,49 @@
+ .logos {
+  position: absolute;
+  top: 17%;
+  left: 50%;
+ }
+
+ .log-trio {
+    max-width: 150px;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -90%);
+   }
+   .contrrol {
+    background-color: transparent;
+    color: #ffffff;
+    display: block;
+    width: 100%;
+    outline: 0;
+    border: none;
+    border-bottom: 1px solid #fcfcfc;
+  }
+  .intruder h5  {
+    color: white;
+    text-align: center;
+    font-size: 1.35em;
+    font-weight: 500;
+    line-height: 1.1;
+  }
+  .intruder div .btn  {
+    color: white;
+    font-size: 0.8em;
+    font-weight: 400;
+    text-align: center;
+    background-color: #a5763e;
+  }
+
+  .textos-bottom {
+    color: white;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, -150%);
+    z-index: 151;
+   }
+  
+   .textos-bottom small {
+    font-size: 0.8em;
+   }
+  
